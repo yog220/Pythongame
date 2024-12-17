@@ -2,8 +2,8 @@ import pygame
 from random import randint
 
 class Player(pygame.sprite.Sprite):
-    def _init_(self,groups):
-        super()._init_(groups)
+    def __init__(self,groups):
+        super().__init__(groups)
         self.image = pygame.image.load('5games-main/space shooter/images/player.png').convert_alpha()
         self.rect = self.image.get_frect(center = (window_width/2, window_height/2))
 
@@ -84,6 +84,7 @@ while running: # event loop, as without this, the window would just open and clo
     display_surface.blit(laser_surf,laser_rect)
     
     all_sprites.draw(display_surface)
+    pygame.display.update()
 ##Thank you so much for your help. One day, when I too will have the competence - I will give back the value which I recieved from you.    
 
 #player movement left to right to left to right...
@@ -92,5 +93,7 @@ while running: # event loop, as without this, the window would just open and clo
     #     player_direction.y *=-1
     # if player_rect.right>window_width or player_rect.left<0:
     #     player_direction.x *=-1
+
+pygame.quit()
    
    
