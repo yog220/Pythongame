@@ -84,7 +84,7 @@ while running: # event loop, as without this, the window would just open and clo
     display_surface.blit(laser_surf,laser_rect)
     
     all_sprites.draw(display_surface)
-##Thank you so much for your help. one day, when I too will have the competence - I will give back the value which I recieved from you.    
+##Thank you so much for your help. One day, when I too will have the competence - I will give back the value which I recieved from you.    
 
 #player movement left to right to left to right...
     # player_rect.center += player_direction * player_speed *dt #multiplyling player speed with delta time all the users of the game get the same frame speed influneced by a common player speed - irrespective of the computer.
